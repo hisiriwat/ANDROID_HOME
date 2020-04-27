@@ -5,11 +5,20 @@ Setting ANDROID_HOME on Mac OS X
 > nano ~/.bash_profile 
 
 2. Add lines:
-> export ANDROID_HOME=/YOUR_PATH_TO/android-sdk
 
-> export PATH=$ANDROID_HOME/platform-tools:$PATH
+> export JAVA_HOME=$(/usr/libexec/java_home)
 
-> export PATH=$ANDROID_HOME/tools:$PATH
+> export ANDROID_HOME=/Users/YOUR_PATH_TO/Library/Android/sdk
+
+> export PATH=$PATH:$ANDROID_HOME/emulator
+
+> export PATH=$PATH:$ANDROID_HOME/tools
+
+> export PATH=$PATH:$ANDROID_HOME/tools/bin
+
+> export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+> export PATH=$PATH:/Users/YOUR_PATH_TO/Development/flutter/bin
 
 3. Check it worked
 > source ~/.bash_profile
