@@ -5,6 +5,9 @@ Setting ANDROID_HOME on Mac OS X
 > nano ~/.bash_profile 
 
 2. Add lines:
+* Add the java tool to your path.
+* Add the android tool to your path.
+* Add the flutter tool to your path.
 
 > export JAVA_HOME=$(/usr/libexec/java_home)
 
